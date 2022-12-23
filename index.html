@@ -22,7 +22,8 @@
   <body>
     <div class="wrapper">
       <!--SideBar-->
-      <nav>
+      <nav id="navBar">
+        <button id="menu2" onclick="toggleMenu()"><img src="img/xp-close.png" alt="menuButton">Bezárás</button>
         <div class="box">
           <label>
             <b>Projektek</b>
@@ -63,6 +64,7 @@
       </nav>
       <!--Content-->
       <section>
+      <button id="menu" onclick="toggleMenu()"><img src="img/menu.svg" alt="menuButton"></button>
         <noscript>
           Figyelem! A böngészőben le van tiltva a JavaScript, ami a felhasználói
           élmény romlásához vezethet.
