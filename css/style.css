@@ -25,6 +25,7 @@ nav {
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to bottom,#7ba2e7,#6375d6);
 }
 
 nav .box label b,
