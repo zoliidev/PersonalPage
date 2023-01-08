@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vágány Zoltán</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Vágány Zoltán" />
@@ -23,7 +24,9 @@
     <div class="wrapper">
       <!--SideBar-->
       <nav id="navBar">
-        <button id="menu2" onclick="toggleMenu()"><img src="img/xp-close.png" alt="menuButton">Bezárás</button>
+        <button id="menu2" onclick="toggleMenu()">
+          <img src="img/xp-close.png" alt="menuButton" />Bezárás
+        </button>
         <div class="box">
           <label>
             <b>Projektek</b>
@@ -51,6 +54,11 @@
                 <img src="img/258-1.png" alt="xpLogoFileShare" />Github
               </a>
             </li>
+            <li>
+              <a href="https://hugaming.hu/discord" target="_blank">
+                <img src="img/dclogo.png" alt="dcLogo" />Discord
+              </a>
+            </li>
           </ul>
         </div>
         <div class="bottom">
@@ -64,7 +72,9 @@
       </nav>
       <!--Content-->
       <section>
-      <button id="menu" onclick="toggleMenu()"><img src="img/menu.svg" alt="menuButton"></button>
+        <button id="menu" onclick="toggleMenu()">
+          <img src="img/menu.svg" alt="menuButton" />
+        </button>
         <noscript>
           Figyelem! A böngészőben le van tiltva a JavaScript, ami a felhasználói
           élmény romlásához vezethet.
@@ -75,7 +85,19 @@
             <p>Programtervező informatikus hallgató</p>
           </div>
           <div class="right">
-            <img src="/img/foto.webp" alt="Fotó" />
+            <div class="window">
+              <div class="bar">
+                <div class="title">
+                  <h3>Photo Viewer</h3>
+                </div>
+                <div class="btns">
+                  <img src="/img/min.png" alt="min" />
+                  <img src="/img/max.png" alt="max" />
+                  <img src="/img/close.png" alt="x" />
+                </div>
+              </div>
+              <img src="/img/foto.webp" class="profile" alt="Fotó" />
+            </div>
           </div>
         </div>
         <hr />
@@ -92,8 +114,8 @@
                 és Szakképző Iskola - Érettségi
               </li>
               <li>
-                <b>2021-</b> Kecskeméti Neumann János Egyetem GAMF kar - Programtervező
-                Informatikus
+                <b>2021-</b> Kecskeméti Neumann János Egyetem GAMF kar -
+                Programtervező Informatikus
               </li>
             </ul>
           </div>
@@ -101,7 +123,8 @@
             <h2>Munkahelyi tapasztalatok</h2>
             <ul>
               <li>
-                <b>Középiskolás szakmai gyakorlat:</b> Ceglédi Délibáb kávézó
+                <b>Középiskolás nyári szakmai gyakorlatok:</b> Ceglédi Délibáb
+                kávézó
               </li>
             </ul>
           </div>
@@ -125,11 +148,21 @@
             <h2>Hobby projektek</h2>
             <ul>
               <li>
-                <b>2022</b> Barátaimmal egy MineCraft játékszerver fejlesztésébe
-                fogtunk bele (<a href="https://hugaming.hu" target="_blank"
+                <b>2019-2021</b> HuGaming nevű MTA RolePlay szerver
+                fejlesztésébe vágtunk bele, mely Marcy (LUA fejlesztőnk)
+                távozásával ért véget. <br />A megnövekedett érdeklődés miatt
+                elgondolkodtunk raja, hogy újra elővegyük, de egyikünk se ért a
+                LUA nyelvhez.
+              </li>
+              <li>
+                <b>2022</b> Barátaimmal a HuGaming MineCraft játékszerver
+                fejlesztésébe fogtunk bele (<a
+                  href="https://hugaming.hu"
+                  target="_blank"
                   ><u>HuGaming</u></a
-                >). A játék programozásához a Java nyelvet haszáljuk, weboldalon
-                PHP,HTML,JS,CSS-t.
+                >), mely egy klánháborús, túlélő játékmódon fog alapulni. A
+                játékmenetet kasztokkal, varázs tárgyakkal szeretnénk
+                megújítani.
               </li>
             </ul>
           </div>
@@ -138,4 +171,5 @@
     </div>
   </body>
   <script src="js/script.js"></script>
+  <script src="js/window.js"></script>
 </html>

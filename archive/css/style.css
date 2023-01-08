@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #ddd;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.first {
+    background: rgb(50, 50, 50);
+    color: white;
+    display: flex;
+}
+
+.first img {
+    width: 16rem;
+}
+
+.first .right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.first a {
+    color: white;
+}
+
+.second {
+    margin-top: -2rem;
+    background: #ddd;
+}
+
+.hover:hover{
+    cursor: pointer;
+}
+
+.custom-shape-divider-top-1659781944 {
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.easteregg {
+    width: 1.5rem;
+}
+
+li {
+    width: fit-content;
+}
+
+.custom-shape-divider-top-1659781944 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-top-1659781944 .shape-fill {
+    fill: rgb(50, 50, 50);
+}
+
+.custom-shape-divider-top-1659781944 {
+    background: #ddd;
+}
+
+@media(max-width:600px) {
+    section {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .first .right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

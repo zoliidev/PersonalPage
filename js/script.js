@@ -20,11 +20,11 @@ function toggleMenu() {
     if (visibility) {
         visibility = false;
         navBar.style.display = "none";
-        menuBtn.style.display = "flex";
+        //menuBtn.style.display = "flex";
     } else {
         visibility = true;
         navBar.style.display = "flex";
-        menuBtn.style.display = "none";
+        //menuBtn.style.display = "none";
         animate();
     }
 }

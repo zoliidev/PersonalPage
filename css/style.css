@@ -109,6 +109,10 @@ section {
     height: 100vh;
 }
 
+ul{
+    width: fit-content;
+}
+
 .first,
 .second {
     padding: 0 1rem 0 0;
@@ -123,11 +127,56 @@ section {
     position: absolute;
 }
 
-.right img {
+.right .profile{
     width: 250px;
+    border-left: solid 4px;
+    border-right: solid 4px;
+    border-image: linear-gradient(
+        to top,
+        #0055e5,
+        #3a85f6) 30;
+    border-bottom: solid #0055e5 4px;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
     margin: 1rem;
-    border: solid #6d89dd 3px;
-    border-radius: 3px 3px 0 0;
+}
+
+.window .bar{
+    background: linear-gradient(to bottom, #0055e5, #3a85f6);
+    width: 258px;
+    display: flex;
+    border-radius: 8px 8px 0 0;
+}
+
+.window .bar img{
+    width: 20px;
+    margin-top: .3rem;
+    margin-left: .2rem;
+}
+
+.window .bar img:last-child{
+    margin-right: .3rem;
+}
+
+.window img{
+    margin: 0;
+    padding: 0;
+}
+
+.window .title{
+    margin-right: auto;
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.window .title h3{
+    margin: 0;
+    padding: 0;
+    color: white;
 }
 
 .easteregg {
@@ -160,42 +209,4 @@ section {
 #menu2 img {
     width: 2rem;
     vertical-align: middle;
-}
-
-@media(max-width: 1250px) {
-    section .right {
-        position: unset;
-        margin-left: auto;
-    }
-}
-
-@media(max-width: 670px) {
-    .first {
-        flex-direction: column;
-    }
-
-    section .right {
-        margin-left: 0;
-    }
-}
-
-@media(max-width: 540px) {
-    nav {
-        margin: 0;
-        padding: 0 .5rem;
-        display: none;
-        position: absolute;
-    }
-
-    #menu {
-        display: flex;
-        /*! position: absolute; */
-        /*! right: .5rem; */
-        /*! top: .5rem; */
-        margin: 1rem 0 0 0;
-    }
-
-    #menu2 {
-        display: flex;
-    }
 }
