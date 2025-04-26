@@ -18,6 +18,9 @@ noscript{
 section h1,
 section h2 {
     font-size: 1.3rem;
+    margin-bottom: 0;
+    /*! padding: 0; */
+    /*! margin: 0; */
 }
 
 section p,
@@ -82,6 +85,10 @@ nav .box ul {
     padding: 0;
     display: flex;
     flex-direction: column;
+}
+
+.Intro-TXT li{
+    margin: 0 0 1rem 0;
 }
 
 nav .box {
@@ -196,7 +203,7 @@ ul{
     max-width: 80%;
 }
 .Intro-TXT p{
-    margin: .2em 0;
+    margin: .5em 0;
 }
 
 #menu,
