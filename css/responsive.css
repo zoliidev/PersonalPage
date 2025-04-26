@@ -1,0 +1,41 @@
+@media(max-width: 1250px) {
+    section .right {
+        position: unset;
+        margin-left: auto;
+    }
+    
+    section{
+        width: 100%;
+    }
+}
+
+@media(max-width: 670px) {
+    .first {
+        flex-direction: column;
+    }
+
+    section .right {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 540px) {
+    nav {
+        margin: 0;
+        padding: 0 .5rem;
+        display: none;
+        position: absolute;
+    }
+
+    #menu {
+        display: flex;
+        /*! position: absolute; */
+        /*! right: .5rem; */
+        /*! top: .5rem; */
+        margin: 1rem 0 0 0;
+    }
+
+    #menu2 {
+        display: flex;
+    }
+}

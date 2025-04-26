@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+.boot-screen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+  
+  .boot-container {
+    width: 250px;
+    height: 25px;
+    background-color: #000;
+    border: 2px solid #b3b4b4;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    position: absolute;
+    animation: moveBar 2s linear infinite;
+    display: flex;
+  }
+  
+  .rect {
+    width: 15px;
+    height: 80%;
+    margin: 2px 2px;
+    border-radius: 2px;
+  }
+  
+  .boot-text {
+    color: white;
+  }
+  
+  .rectColor1 {
+    background: linear-gradient(
+      180deg,
+      rgba(65, 30, 246, 1) 0%,
+      rgba(165, 187, 255, 1) 33%,
+      rgba(138, 145, 253, 1) 58%,
+      rgba(65, 30, 246, 1) 75%
+    );
+  }
+  
+  .rectColor2 {
+    background: linear-gradient(
+      180deg,
+      rgba(65, 30, 246, 1) 0%,
+      rgba(139, 146, 253, 1) 24%,
+      rgba(165, 187, 255, 1) 33%,
+      rgba(138, 145, 253, 1) 61%,
+      rgba(65, 30, 246, 1) 83%
+    );
+  }
+  
+  .rectColor3 {
+    background: linear-gradient(
+      180deg,
+      rgba(65, 30, 246, 1) 0%,
+      rgba(139, 146, 253, 1) 24%,
+      rgba(165, 187, 255, 1) 33%,
+      rgba(138, 145, 253, 1) 70%,
+      rgba(65, 30, 246, 1) 90%
+    );
+  }
+  
+  .boot-text-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .boot-text-wrap h1{
+    font-size: 2.8rem;
+  }
+  
+  .personal-page{
+    font-size: 1.3rem;
+  }
+  
+  .boot-text2 {
+    align-content: end;
+    font-size: 2.5rem;
+    color: #ff5d26;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .xp-logo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .logoAlign {
+    display: flex;
+    gap: 1rem;
+    /*! justify-content: end; */
+  }
+  
+  .logoAlign p {
+    align-content: end;
+  }
+  
+  @keyframes moveBar {
+    0% {
+      left: -100px;
+    }
+  
+    100% {
+      left: 350px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .boot-text-wrap h1{
+      font-size: 2rem;
+    }
+    .boot-text2 {
+      font-size: 1.5rem;
+    }
+    .xp-logo {
+      width: 100px;
+      height: 100px;
+    }
+    
+  }
